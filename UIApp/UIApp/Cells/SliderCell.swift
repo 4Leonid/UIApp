@@ -1,9 +1,5 @@
 import UIKit
 
-protocol SliderCellDelegate: AnyObject {
-  func showText(_ text: String)
-}
-
 final class SliderCell: UITableViewCell {
   
   // MARK: - UIElements

@@ -1,9 +1,5 @@
 import UIKit
 
-protocol TextFieldCellDelegate: AnyObject {
-    func textFieldDidChange(withText: String)
-}
-
 final class TextFieldCell: UITableViewCell {
   
   // MARK: - UIElements

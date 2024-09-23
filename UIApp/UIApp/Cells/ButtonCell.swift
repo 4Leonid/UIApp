@@ -1,9 +1,5 @@
 import UIKit
 
-protocol ButtonCellDelegate: AnyObject {
-  func showText()
-}
-
 final class ButtonCell: UITableViewCell {
   
   // MARK: - UIElements
