@@ -6,7 +6,7 @@
 //
 
 protocol CellDelegate: AnyObject {
-  func textFieldDidChange(withText: String)
+  func textFieldDidChange(with text: String)
   func showSliderNumber(_ text: String)
   func showButtonTapped()
   func showSwitchChanged(_ text: String)

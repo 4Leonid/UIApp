@@ -13,7 +13,7 @@ final class ButtonCell: UITableViewCell {
   static let reuseIdentifier = String(describing: ButtonCell.self)
   static let rowHeigh: CGFloat = 100
   
-  weak var delegate: ButtonCellDelegate?
+  weak var delegate: CellDelegate?
   
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -29,7 +29,7 @@ final class ButtonCell: UITableViewCell {
 
 extension ButtonCell {
   @objc func buttonTapped() {
-    delegate?.showText()
+    delegate?.showButtonTapped()
   }
 }
 

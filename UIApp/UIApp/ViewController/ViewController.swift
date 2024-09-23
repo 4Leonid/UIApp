@@ -63,8 +63,8 @@ extension ViewController: UITableViewDataSource {
 
 // MARK: - CellDelegate
 extension ViewController: CellDelegate {
-  func textFieldDidChange(withText: String) {
-    <#code#>
+  func textFieldDidChange(with text: String) {
+    print(text)
   }
   
   func showSwitchChanged(_ text: String) {

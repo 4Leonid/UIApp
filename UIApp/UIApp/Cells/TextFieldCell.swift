@@ -30,7 +30,7 @@ final class TextFieldCell: UITableViewCell {
 
 extension TextFieldCell: UITextFieldDelegate {
   @objc func textFieldDidChange() {
-    delegate?.textFieldDidChange(withText: textField.text ?? "")
+    delegate?.textFieldDidChange(with: textField.text ?? "")
   }
 }
 
