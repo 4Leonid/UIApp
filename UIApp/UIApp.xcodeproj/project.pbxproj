@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		BF72C91F2CA165AC0055525F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF72C91E2CA165AC0055525F /* AppDelegate.swift */; };
 		BF72C9212CA165AC0055525F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF72C9202CA165AC0055525F /* SceneDelegate.swift */; };
-		BF72C9232CA165AC0055525F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF72C9222CA165AC0055525F /* ViewController.swift */; };
+		BF72C9232CA165AC0055525F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF72C9222CA165AC0055525F /* MainViewController.swift */; };
 		BF72C9282CA165AE0055525F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF72C9272CA165AE0055525F /* Assets.xcassets */; };
 		BF72C92B2CA165AE0055525F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BF72C92A2CA165AE0055525F /* Base */; };
-		BF72C9332CA1661A0055525F /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF72C9322CA1661A0055525F /* TableView.swift */; };
+		BF72C9332CA1661A0055525F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF72C9322CA1661A0055525F /* MainView.swift */; };
 		BF72C9352CA1666E0055525F /* LabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF72C9342CA1666E0055525F /* LabelCell.swift */; };
 		BF72C9382CA166AB0055525F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF72C9372CA166AB0055525F /* UIView+Extension.swift */; };
 		BF72C93C2CA16A3A0055525F /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF72C93B2CA16A3A0055525F /* ButtonCell.swift */; };
@@ -22,17 +22,18 @@
 		BF72C9442CA171400055525F /* TextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF72C9432CA171400055525F /* TextViewCell.swift */; };
 		BF72C9462CA172FE0055525F /* StepperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF72C9452CA172FE0055525F /* StepperCell.swift */; };
 		BF72C9482CA19FB20055525F /* CustomCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF72C9472CA19FB20055525F /* CustomCellDelegate.swift */; };
+		BFE0FE912CA2AD3000FAC831 /* TableCellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0FE902CA2AD3000FAC831 /* TableCellFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BF72C91B2CA165AC0055525F /* UIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF72C91E2CA165AC0055525F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF72C9202CA165AC0055525F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BF72C9222CA165AC0055525F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF72C9222CA165AC0055525F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BF72C9272CA165AE0055525F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF72C92A2CA165AE0055525F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF72C92C2CA165AE0055525F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BF72C9322CA1661A0055525F /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		BF72C9322CA1661A0055525F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		BF72C9342CA1666E0055525F /* LabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCell.swift; sourceTree = "<group>"; };
 		BF72C9372CA166AB0055525F /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		BF72C93B2CA16A3A0055525F /* ButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
@@ -42,6 +43,7 @@
 		BF72C9432CA171400055525F /* TextViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewCell.swift; sourceTree = "<group>"; };
 		BF72C9452CA172FE0055525F /* StepperCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperCell.swift; sourceTree = "<group>"; };
 		BF72C9472CA19FB20055525F /* CustomCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellDelegate.swift; sourceTree = "<group>"; };
+		BFE0FE902CA2AD3000FAC831 /* TableCellFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +77,9 @@
 			isa = PBXGroup;
 			children = (
 				BF72C93A2CA16A090055525F /* ViewController */,
-				BF72C9362CA1669B0055525F /* Helpers */,
 				BF72C9392CA169EE0055525F /* Cells */,
+				BFE0FE922CA2B8AC00FAC831 /* Factory */,
+				BF72C9362CA1669B0055525F /* Helpers */,
 				BF72C91E2CA165AC0055525F /* AppDelegate.swift */,
 				BF72C9202CA165AC0055525F /* SceneDelegate.swift */,
 				BF72C9272CA165AE0055525F /* Assets.xcassets */,
@@ -112,10 +115,18 @@
 		BF72C93A2CA16A090055525F /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				BF72C9222CA165AC0055525F /* ViewController.swift */,
-				BF72C9322CA1661A0055525F /* TableView.swift */,
+				BF72C9222CA165AC0055525F /* MainViewController.swift */,
+				BF72C9322CA1661A0055525F /* MainView.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BFE0FE922CA2B8AC00FAC831 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				BFE0FE902CA2AD3000FAC831 /* TableCellFactory.swift */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,11 +201,12 @@
 			files = (
 				BF72C9442CA171400055525F /* TextViewCell.swift in Sources */,
 				BF72C9382CA166AB0055525F /* UIView+Extension.swift in Sources */,
-				BF72C9232CA165AC0055525F /* ViewController.swift in Sources */,
-				BF72C9332CA1661A0055525F /* TableView.swift in Sources */,
+				BF72C9232CA165AC0055525F /* MainViewController.swift in Sources */,
+				BF72C9332CA1661A0055525F /* MainView.swift in Sources */,
 				BF72C9352CA1666E0055525F /* LabelCell.swift in Sources */,
 				BF72C9402CA16F2B0055525F /* SliderCell.swift in Sources */,
 				BF72C91F2CA165AC0055525F /* AppDelegate.swift in Sources */,
+				BFE0FE912CA2AD3000FAC831 /* TableCellFactory.swift in Sources */,
 				BF72C9212CA165AC0055525F /* SceneDelegate.swift in Sources */,
 				BF72C93C2CA16A3A0055525F /* ButtonCell.swift in Sources */,
 				BF72C93E2CA16DA10055525F /* TextFieldCell.swift in Sources */,

@@ -1,12 +1,12 @@
 import UIKit
 
-class CustomView: UIView {
+final class MainView: UIView {
   
   private let tableView =  UITableView()
   
-  weak var delegate: ViewController?
+  weak var delegate: MainViewControllerProtocol?
   
-  init(delegate: ViewController?) {
+  init(delegate: MainViewControllerProtocol?) {
     self.delegate = delegate
     super.init(frame: .zero)
     setupUI()
@@ -21,7 +21,7 @@ class CustomView: UIView {
 }
 
 //  MARK: - Set Views and Constraints
-extension CustomView {
+extension MainView {
   func setupUI() {
     tableView.translatesAutoresizingMaskIntoConstraints = false
     tableView.register(LabelCell.self, forCellReuseIdentifier: LabelCell.reuseIdentifier)

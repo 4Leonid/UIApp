@@ -3,7 +3,7 @@ import UIKit
 final class TextViewCell: UITableViewCell {
   
   // MARK: - UIElements
-  private let customTextView = UITextView()
+  private let textView = UITextView()
   
   // MARK: - Properties
   static let reuseIdentifier = String(describing: TextViewCell.self)
@@ -25,7 +25,7 @@ final class TextViewCell: UITableViewCell {
 
 extension TextViewCell {
   func configure(with text: String) {
-    customTextView.text = text
+    textView.text = text
   }
 }
 
@@ -33,23 +33,23 @@ extension TextViewCell {
 private extension TextViewCell {
   func setupUI() {
     // Title Label
-    customTextView.translatesAutoresizingMaskIntoConstraints = false
-    customTextView.backgroundColor = .yellow
-    customTextView.text = "Hello there"
-    customTextView.textAlignment = .center
+    textView.translatesAutoresizingMaskIntoConstraints = false
+    textView.backgroundColor = .yellow
+    textView.text = "Hello there"
+    textView.textAlignment = .center
   }
   
   func configureSubviews() {
-    contentView.addSubview(customTextView)
+    contentView.addSubview(textView)
   }
   
   func setupConstraints() {
     NSLayoutConstraint.activate([
-      customTextView.leadingAnchor.constraint(equalToSystemSpacingAfter: contentView.leadingAnchor, multiplier: 2),
-      contentView.trailingAnchor.constraint(equalToSystemSpacingAfter: customTextView.trailingAnchor, multiplier: 2),
-      customTextView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
-      customTextView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-      customTextView.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 0.5),
+      textView.leadingAnchor.constraint(equalToSystemSpacingAfter: contentView.leadingAnchor, multiplier: 2),
+      contentView.trailingAnchor.constraint(equalToSystemSpacingAfter: textView.trailingAnchor, multiplier: 2),
+      textView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+      textView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+      textView.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 0.5),
     ])
   }
 }

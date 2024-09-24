@@ -10,4 +10,5 @@ protocol CellDelegate: AnyObject {
   func showSliderNumber(_ text: String)
   func showButtonTapped()
   func showSwitchChanged(_ text: String)
+  func showStepper(_ value: String)
 }
