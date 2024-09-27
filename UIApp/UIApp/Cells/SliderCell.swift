@@ -2,6 +2,8 @@ import UIKit
 
 final class SliderCell: UITableViewCell {
   
+  var onSliderValueChanged: ((Int) -> Void)?
+  
   // MARK: - UIElements
   private let slider = UISlider()
   
@@ -25,7 +27,8 @@ final class SliderCell: UITableViewCell {
 
 extension SliderCell {
   @objc func sliderValueChanged() {
-    delegate?.showSliderNumber("\(slider.value)")
+    let value = Int(slider.value)
+    onSliderValueChanged?(value)
   }
 }
 

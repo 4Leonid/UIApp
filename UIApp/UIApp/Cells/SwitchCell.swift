@@ -2,6 +2,8 @@ import UIKit
 
 final class SwitchCell: UITableViewCell {
   
+  var onSwitchValueChanged: ((String) -> Void)?
+  
   // MARK: - UIElements
   private let customSwitch = UISwitch()
   
@@ -26,7 +28,11 @@ final class SwitchCell: UITableViewCell {
 // MARK: - Actions
 extension SwitchCell {
   @objc func showSwitchChanged() {
-    delegate?.showSwitchChanged(customSwitch.isOn ? "Switch is On" : "Switch is Off")
+    onSwitchValueChanged?(
+      customSwitch.isOn
+      ? "Switch is On"
+      : "Switch is Off"
+    )
   }
 }
 

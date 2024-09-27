@@ -2,6 +2,8 @@ import UIKit
 
 final class StepperCell: UITableViewCell {
   
+  var onStepperValueChanged: ((Double) -> Void)?
+  
   // MARK: - UIElements
   private let stepper = UIStepper()
   
@@ -26,6 +28,7 @@ final class StepperCell: UITableViewCell {
 extension StepperCell {
   @objc func stepperChanged() {
     delegate?.showStepper("\(stepper.value)")
+    onStepperValueChanged?(stepper.value)
   }
 }
 

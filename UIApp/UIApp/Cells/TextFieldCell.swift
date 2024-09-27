@@ -2,6 +2,8 @@ import UIKit
 
 final class TextFieldCell: UITableViewCell {
   
+  var onTextFieldValueChanged: ((String) -> Void)?
+  
   // MARK: - UIElements
   private let textField = UITextField()
   
@@ -26,7 +28,7 @@ final class TextFieldCell: UITableViewCell {
 
 extension TextFieldCell: UITextFieldDelegate {
   @objc func textFieldDidChange() {
-    delegate?.textFieldDidChange(with: textField.text ?? "")
+    onTextFieldValueChanged?(textField.text ?? "")
   }
 }
 
@@ -50,9 +52,5 @@ private extension TextFieldCell {
       textField.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
       textField.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
     ])
-  }
-  
-  func setDelegates() {
-    textField.delegate = self
   }
 }

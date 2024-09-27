@@ -2,6 +2,8 @@ import UIKit
 
 final class ButtonCell: UITableViewCell {
   
+  var onButtonValueChanged: (() -> Void)?
+  
   // MARK: - UIElements
   private let button = UIButton(type: .system)
   
@@ -25,7 +27,7 @@ final class ButtonCell: UITableViewCell {
 
 extension ButtonCell {
   @objc func buttonTapped() {
-    delegate?.showButtonTapped()
+    onButtonValueChanged?()
   }
 }
 

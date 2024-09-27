@@ -22,7 +22,7 @@
 		BF72C9442CA171400055525F /* TextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF72C9432CA171400055525F /* TextViewCell.swift */; };
 		BF72C9462CA172FE0055525F /* StepperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF72C9452CA172FE0055525F /* StepperCell.swift */; };
 		BF72C9482CA19FB20055525F /* CustomCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF72C9472CA19FB20055525F /* CustomCellDelegate.swift */; };
-		BFE0FE912CA2AD3000FAC831 /* TableCellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0FE902CA2AD3000FAC831 /* TableCellFactory.swift */; };
+		BF81210A2CA6BA7300321588 /* MainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8121092CA6BA7300321588 /* MainTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +43,7 @@
 		BF72C9432CA171400055525F /* TextViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewCell.swift; sourceTree = "<group>"; };
 		BF72C9452CA172FE0055525F /* StepperCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperCell.swift; sourceTree = "<group>"; };
 		BF72C9472CA19FB20055525F /* CustomCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellDelegate.swift; sourceTree = "<group>"; };
-		BFE0FE902CA2AD3000FAC831 /* TableCellFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellFactory.swift; sourceTree = "<group>"; };
+		BF8121092CA6BA7300321588 /* MainTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				BF72C9222CA165AC0055525F /* MainViewController.swift */,
+				BF8121092CA6BA7300321588 /* MainTableView.swift */,
 				BF72C9322CA1661A0055525F /* MainView.swift */,
 			);
 			path = ViewController;
@@ -124,7 +125,6 @@
 		BFE0FE922CA2B8AC00FAC831 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
-				BFE0FE902CA2AD3000FAC831 /* TableCellFactory.swift */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -206,11 +206,11 @@
 				BF72C9352CA1666E0055525F /* LabelCell.swift in Sources */,
 				BF72C9402CA16F2B0055525F /* SliderCell.swift in Sources */,
 				BF72C91F2CA165AC0055525F /* AppDelegate.swift in Sources */,
-				BFE0FE912CA2AD3000FAC831 /* TableCellFactory.swift in Sources */,
 				BF72C9212CA165AC0055525F /* SceneDelegate.swift in Sources */,
 				BF72C93C2CA16A3A0055525F /* ButtonCell.swift in Sources */,
 				BF72C93E2CA16DA10055525F /* TextFieldCell.swift in Sources */,
 				BF72C9482CA19FB20055525F /* CustomCellDelegate.swift in Sources */,
+				BF81210A2CA6BA7300321588 /* MainTableView.swift in Sources */,
 				BF72C9422CA170680055525F /* SwitchCell.swift in Sources */,
 				BF72C9462CA172FE0055525F /* StepperCell.swift in Sources */,
 			);
